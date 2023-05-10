@@ -25,7 +25,7 @@ function Navbar() {
         <a className="navbar-brand" href='#'><img src="./rmaya.png" alt="Bootstrap" width="30" height="24"></img></a>
         
         <div className="d-flex">
-            <a className="navbar-brand ms-2" href='#'>Work</a>
+            <a className="navbar-brand ms-2" href='#work'>Work</a>
             <a className="navbar-brand ms-2" href='#'>About</a>
             <a className="navbar-brand ms-2" href='#'>Connect</a>
         </div>

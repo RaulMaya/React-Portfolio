@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../styles/Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,11 +22,11 @@ function Projects(props) {
     }
   };
   return (
-    <div className="container">
+    <div id="work" className="container">
       <p className="topicStyles">Projects</p>
       <div className="d-flex justify-content-between">
-        <div className="col-7">
-          <h1 className="text-primary">Some of my projects for you to see</h1>
+        <div className="col-9">
+          <h1 className="text-primary mb-4">Some of my projects for you to see</h1>
           <button
             id="backBtn"
             className="btn btn-primary me-2"
@@ -46,15 +45,15 @@ function Projects(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
           <div>
-            <h3 className="text-primary">{props.developer[currentIndex].title}</h3>
-            <p className="text-primary">{props.developer[currentIndex].description}</p>
-            <p className="text-primary">{props.developer[currentIndex].url}</p>
-            <button className="btn btn-primary btn-lg" type="button">
+            <h3 className="text-primary mt-3">{props.developer[currentIndex].title}</h3>
+            <p id="projectDescription" className="mt-2 mb-3 pe-5 text-wrap">{props.developer[currentIndex].description}</p>
+            <p className="text-primary"></p>
+            <a href={props.developer[currentIndex].url}><button className="btn btn-primary btn-md mb-2" type="button">
               View Project
-            </button>
+            </button></a>
           </div>
         </div>
-        <div className="col-5">
+        <div className="col-3">
           <img
             src={props.developer[currentIndex].image}
             className="device"
