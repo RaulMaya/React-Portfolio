@@ -20,14 +20,14 @@ import React from 'react';
 // In Navbar, we can assign a style from an object by using curly braces
 function Navbar() {
   return (
-    <nav className="navbar bg-body-tertiary">
+    <nav className="navbar bg-one">
     <div className="container">
         <a className="navbar-brand" href='#'><img src="./rmaya.png" alt="Bootstrap" width="30" height="24"></img></a>
         
         <div className="d-flex">
-            <a className="navbar-brand ms-2" href='#work'>Work</a>
-            <a className="navbar-brand ms-2" href='#'>About</a>
-            <a className="navbar-brand ms-2" href='#'>Connect</a>
+            <a className="navbar-brand ms-2 text-light" href='#work'>Work</a>
+            <a className="navbar-brand ms-2 text-light" href='#about'>About</a>
+            <a className="navbar-brand ms-2 text-light" href='#connect'>Connect</a>
         </div>
     </div>
     </nav>

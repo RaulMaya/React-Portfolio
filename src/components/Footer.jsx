@@ -2,14 +2,14 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="container flex flex-col justify-center gap-10 py-16 md:flex-row md:justify-between">
-            <section className="flex w-1/2 gap-8 md:gap-12 text-xl">
+        <footer className="container-fluid d-flex justify-content-between ps-5 bg-two">
+            <section className="d-flex w-50 gap-2 gap-md-3 ps-5">
                 <a href="">Github</a>
                 <a href="">Github</a>
                 <a href="">Github</a>
                 <a href="">Github</a>
             </section>
-            <p className="font-light text-dark-300 dark:text-dark-400"> Raul Maya</p>
+            <p className="text-light pe-5 me-5"> Raul Maya</p>
         </footer>
     );
 }
