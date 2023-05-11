@@ -54,15 +54,15 @@ Create a portfolio using your new React skills, which will help set you apart fr
 
 ### About
 
-<p>Paragraph 1.</p>
+<p>Overall, this React application provides a structure for managing and rendering different pages/components within a portfolio application, allowing users to navigate through different sections of the portfolio..</p>
 
-<p>Paragraph 1.</p>
+<p>In the JSX code, the PortfolioContainer component renders a <code>< div ></code> element that contains three child components: Navbar, renderPage() (the result of the renderPage function), and Footer. The Navbar component receives the currentPage state and the handlePageChange function as props.</p>
 
 <br>
 
 ### Usage
 
-<p>Paragraph 1.</p>
+<p>A web developer online portfolio serves as a showcase of a web developer's skills, experience, and past projects. It is a collection of their best work that demonstrates their abilities and expertise in web development. The primary purpose of a web developer online portfolio is to impress potential clients, employers, or collaborators by highlighting the developer's capabilities and demonstrating the quality of their work.</p>
 
 <br>
 
@@ -71,13 +71,12 @@ Create a portfolio using your new React skills, which will help set you apart fr
 ```
 git@github.com:RaulMaya/Social-Network-API.git
 npm i
-npm start
-open Insomnia and test end points
+npm run dev
 ```
 
 <br>
 
-### Video
+### Deployment
 
 <a href="https://www.youtube.com/watch?v=Zyc3FdvM99g">
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Link to video">
