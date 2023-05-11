@@ -46,7 +46,7 @@ h3 {
 .topicStyles:before {
   content: "";
   display: block;
-  width: 20px;
+  width: 50px;
   height: 2px;
   background: #21b1dd;
   top: 50%;
@@ -104,4 +104,12 @@ h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 25%;
+}
+
+.subtitle {
+  font-size:0.95rem
+}
+
+.content {
+  font-size:0.85rem
 }

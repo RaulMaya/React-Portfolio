@@ -24,12 +24,20 @@ function Navbar({ currentPage, handlePageChange }) {
       <div className="container">
         <a className="navbar-brand" href='#'><img src="./rmaya.png" alt="Bootstrap" width="30" height="24"></img></a>
 
-        <div className="d-flex">
-          <a className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Header')} href='#header'>Header</a>
-          <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Projects')} href='#projects'>Projects</a>
-          <a className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('About')} href='#about'>About</a>
-          <a className={currentPage === 'Connect' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Connect')} href='#connect'>Connect</a>
-        </div>
+        <ul className="nav d-flex">
+          <li className="nav-item">
+            <a className={currentPage === 'Header' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Header')} href='#header'>Header</a>
+          </li>
+          <li className="nav-item">
+            <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Projects')} href='#projects'>Projects</a>
+          </li>
+          <li className="nav-item">
+            <a className={currentPage === 'About' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('About')} href='#about'>About</a>
+          </li>
+          <li className="nav-item">
+            <a className={currentPage === 'Connect' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Connect')} href='#connect'>Connect</a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

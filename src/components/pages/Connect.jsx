@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { validateEmail } from '../../../utils/helpers';
 
 function Connect() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
   const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -20,7 +21,7 @@ function Connect() {
     } else if (inputType === 'userName') {
       setUserName(inputValue);
     } else {
-      setPassword(inputValue);
+      setMessage(inputValue);
     }
   };
 
@@ -35,17 +36,11 @@ function Connect() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
-      );
-      return;
-    }
-    alert(`Hello ${userName}`);
+
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
-    setPassword('');
+    setMessage('');
     setEmail('');
   };
   return (
@@ -62,7 +57,7 @@ function Connect() {
             className="form-control"
             onChange={handleInputChange}
             type="email"
-            placeholder="email"
+            placeholder="Email"
           />
         </div>
         <div className="mb-3">
@@ -74,7 +69,7 @@ function Connect() {
             onChange={handleInputChange}
             className="form-control"
             type="text"
-            placeholder="username"
+            placeholder="Enter your name"
           />
         </div>
 
@@ -85,11 +80,11 @@ function Connect() {
           className="form-control" 
           id="textArea" 
           rows="3"   
-          value={password}
-          name="password"
+          value={message}
+          name="message"
           onChange={handleInputChange}  
-          type="password"
-          placeholder="Password"></textarea>
+          type="text"
+          placeholder="Type your message"></textarea>
         </div>
         <button type="button" className='btn btn-primary me-2 mt-4' onClick={handleFormSubmit}>Submit</button>
       </form>

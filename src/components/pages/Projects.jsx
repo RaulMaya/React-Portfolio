@@ -45,11 +45,10 @@ function Projects(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
           <div>
-            <h3 className="text-light mt-3 mb-3">{props.developer[currentIndex].title}</h3>
+            <h3 className="text-primary mt-5 mb-3">{props.developer[currentIndex].title}</h3>
             <p id="projectDescription" className="mt-2 mb-3 pe-5 text-light 
             text-wrap">{props.developer[currentIndex].description}</p>
-            <p className="text-light"></p>
-            <a href={props.developer[currentIndex].url}><button className="btn btn-light btn-md mt-4 mb-2" type="button">
+            <a href={props.developer[currentIndex].url}><button className="btn btn-primary btn-md mt-4 mb-2" type="button">
               View Project
             </button></a>
           </div>
