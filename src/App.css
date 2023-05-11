@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
@@ -35,7 +35,6 @@ h3 {
   width: 50%;
 }
 
-
 .topicStyles {
   font-family: sans-serif;
   text-align: center;
@@ -47,35 +46,62 @@ h3 {
 .topicStyles:before {
   content: "";
   display: block;
-  width: 60px;
+  width: 20px;
   height: 2px;
-  background: #2f88a3;
+  background: #21b1dd;
   top: 50%;
   position: absolute;
 }
 
 #projectDescription {
-  width:80%;
+  width: 80%;
   font-size: 1rem;
 }
 
+.blueInk {
+  color: #2f88a3;
+}
+
 .bg-one {
-  background-color:#323031;
+  background-color: #323031;
 }
 
 .bg-two {
-  background-color: #3D3B3C
+  background-color: #3d3b3c;
+}
+
+.text-one {
+  color: #323031;
+}
+
+.text-two {
+  color: #3d3b3c;
+}
+
+.facebook:hover {
+  color: #4267B2
+}
+
+.github:hover {
+  color: #967bb6
+}
+
+.twitter:hover {
+  color: #1DA1F2
+}
+
+.whatsapp:hover {
+  color: #25D366
 }
 
 .form {
   padding: 20px;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 25%;
 }
-
-

@@ -18,18 +18,19 @@ import React from 'react';
 // };
 
 // In Navbar, we can assign a style from an object by using curly braces
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar bg-one">
-    <div className="container">
+      <div className="container">
         <a className="navbar-brand" href='#'><img src="./rmaya.png" alt="Bootstrap" width="30" height="24"></img></a>
-        
+
         <div className="d-flex">
-            <a className="navbar-brand ms-2 text-light" href='#work'>Work</a>
-            <a className="navbar-brand ms-2 text-light" href='#about'>About</a>
-            <a className="navbar-brand ms-2 text-light" href='#connect'>Connect</a>
+          <a className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Header')} href='#header'>Header</a>
+          <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Projects')} href='#projects'>Projects</a>
+          <a className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('About')} href='#about'>About</a>
+          <a className={currentPage === 'Connect' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Connect')} href='#connect'>Connect</a>
         </div>
-    </div>
+      </div>
     </nav>
   );
 }
