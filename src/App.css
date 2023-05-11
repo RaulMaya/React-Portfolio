@@ -71,9 +71,11 @@ h3 {
   padding: 20px;
 }
 
-.form input {
+.form input, .form textarea {
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 25%;
 }
+
+

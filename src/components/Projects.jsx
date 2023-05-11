@@ -26,7 +26,7 @@ function Projects(props) {
       <p className="text-light topicStyles ps-5">Projects</p>
       <div className="d-flex justify-content-between ps-5">
         <div className="col-8">
-          <h1 className="text-light mb-4 pb-5">Some of my projects for you to see</h1>
+          <h1 className="text-light mb-4 pb-3">Some of my projects for you to see</h1>
           <button
             id="backBtn"
             className="btn btn-light me-2"
@@ -49,7 +49,7 @@ function Projects(props) {
             <p id="projectDescription" className="mt-2 mb-3 pe-5 text-light 
             text-wrap">{props.developer[currentIndex].description}</p>
             <p className="text-light"></p>
-            <a href={props.developer[currentIndex].url}><button className="btn btn-light btn-md mb-2" type="button">
+            <a href={props.developer[currentIndex].url}><button className="btn btn-light btn-md mt-4 mb-2" type="button">
               View Project
             </button></a>
           </div>

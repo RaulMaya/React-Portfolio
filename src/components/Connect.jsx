@@ -49,31 +49,49 @@ function Connect() {
     setEmail('');
   };
   return (
-    <div id='connect' className="container-fluid bg-two  ps-5">
-      <p className="topicStyles text-light">Connect</p>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <input
+    <div id='connect' className="container-fluid bg-two ps-5 pt-5 pb-5">
+      <p className="topicStyles text-light ps-5">Connect</p>
+      <h1 className="text-light mb-4 pb-1 ps-5">Interested in working with me or perhaps just talk?</h1>
+      <form className="form ps-5">
+        <div className="mb-3">
+          <label htmlFor="emailField" className="form-label text-light">Email address:</label>
+          <input
+            id='emailField'
+            value={email}
+            name="email"
+            className="form-control"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email"
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="nameField" className="form-label text-light">Enter your name:</label>
+          <input
+            id='nameField'
+            value={userName}
+            name="userName"
+            onChange={handleInputChange}
+            className="form-control"
+            type="text"
+            placeholder="username"
+          />
+        </div>
+
+
+        <div className="mb-3">
+          <label htmlFor="textArea" className="form-label text-light">How can I help you?</label>
+          <textarea 
+          className="form-control" 
+          id="textArea" 
+          rows="3"   
           value={password}
           name="password"
-          onChange={handleInputChange}
+          onChange={handleInputChange}  
           type="password"
-          placeholder="Password"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+          placeholder="Password"></textarea>
+        </div>
+        <button type="button" className='btn btn-primary me-2 mt-4' onClick={handleFormSubmit}>Submit</button>
       </form>
     </div>
   );
