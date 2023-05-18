@@ -69,7 +69,7 @@ Create a portfolio using your new React skills, which will help set you apart fr
 ### Installation
 
 ```
-git@github.com:RaulMaya/Social-Network-API.git
+git clone git@github.com:RaulMaya/React-Portfolio.git
 npm i
 npm run dev
 ```

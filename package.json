@@ -44,5 +44,6 @@
     "react-scripts": "5.0.1",
     "vite": "^4.3.2",
     "whatwg-fetch": "^3.6.2"
-  }
+  },
+  "homepage": "url-to-github-page"
 }
