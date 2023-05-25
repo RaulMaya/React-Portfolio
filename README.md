@@ -78,8 +78,8 @@ npm run dev
 
 ### Deployment
 
-<a href="https://www.youtube.com/watch?v=Zyc3FdvM99g">
-<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Link to video">
+<a href="https://raulmaya.github.io/React-Portfolio/">
+<img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Link to deployment">
 </a>
  
 <br>
