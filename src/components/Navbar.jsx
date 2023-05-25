@@ -26,7 +26,7 @@ function Navbar({ currentPage, handlePageChange }) {
 
         <ul className="nav d-flex">
           <li className="nav-item">
-            <a className={currentPage === 'Header' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Header')} href='#header'>Header</a>
+            <a className={currentPage === 'Home' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Home')} href='#Home'>Home</a>
           </li>
           <li className="nav-item">
             <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link text-light'} onClick={() => handlePageChange('Projects')} href='#projects'>Projects</a>
