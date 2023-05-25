@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+function Home() {
   return (
     <div className="container-fluid ps-5 pt-5 pb-4 bg-one pb-5">
         <div className="d-flex justify-content-between ps-5">
@@ -20,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Home;
